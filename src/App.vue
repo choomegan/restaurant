@@ -1,18 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <div> 
+    <h1 id = "head">Food Galore</h1> 
+    <router-view></router-view>
+  </div> 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import PageContent from './components/PageContent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    //'PgCont':PageContent
+  },
+  data () {
+    return {
+    }
   }
+
 }
 </script>
 
@@ -24,5 +29,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#head {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  background-color: rgb(133, 159, 180);
+  font-size: 40px;
+  padding: 40px;
+  color: white;
+  text-align: center;
 }
 </style>
